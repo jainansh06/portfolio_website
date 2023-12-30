@@ -23,7 +23,7 @@ def write_to_file(data):
 
 
 def write_to_csv(data):
-    with open('Web  Server/database.csv', newline='', mode='a') as database2:
+    with open('portfo/database.csv', newline='', mode='a') as database2:
         email = data['email']
         subject = data['subject']
         message = data['message']
