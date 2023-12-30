@@ -14,16 +14,12 @@ def html_page(page_name):
     return render_template(page_name)
 
 
-def write_to_file(data):
-    with open('Web  Server/database.txt', mode='a') as database:
-        email = data['email']
-        subject = data['subject']
-        message = data['message']
-        file = database.write(f'\n{email},{subject},{message}')
-
-
 def write_to_csv(data):
+<<<<<<< HEAD
     with open('portfo/database.csv', newline='', mode='a') as database2:
+=======
+    with open('database.csv', newline='', mode='a') as database2:
+>>>>>>> 7c67f8410ee0d6a530b7dce56824029cdee0f670
         email = data['email']
         subject = data['subject']
         message = data['message']
